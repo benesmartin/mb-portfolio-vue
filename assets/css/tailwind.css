@@ -31,6 +31,21 @@
   --card-alpha: rgba(28, 28, 28, 0.45);
 }
 
+html {
+  background-color: var(--bg);
+}
+
+@supports (backdrop-filter: none) {
+  .frosted {
+    backdrop-filter: blur(16px);
+  }
+}
+@supports not (backdrop-filter: none) {
+  .frosted {
+    background-color: rgba(28, 28, 28, 0.85);
+  }
+}
+
 .cal-sans-regular {
   font-family: "Cal Sans", sans-serif;
   font-weight: 400;
