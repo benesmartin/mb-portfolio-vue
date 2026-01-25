@@ -12,6 +12,7 @@
         <SectionsHeroSection />
         <SectionsExperienceSection />
       </main>
+      <LayoutAppFooter />
     </div>
   </div>
 </template>
