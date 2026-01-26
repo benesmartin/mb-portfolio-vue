@@ -11,6 +11,7 @@
       <main class="max-w-5xl mx-auto">
         <SectionsHeroSection />
         <SectionsExperienceSection />
+        <SectionsProjectsSection />
       </main>
       <LayoutAppFooter />
     </div>
