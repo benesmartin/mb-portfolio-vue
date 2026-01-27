@@ -32,7 +32,6 @@ export default defineNuxtConfig({
       { code: "cs", language: "cs-CZ", file: "cs.json", name: "Čeština" },
     ],
     defaultLocale: "en",
-    lazy: true,
     langDir: "locales",
     strategy: "no_prefix",
   },
