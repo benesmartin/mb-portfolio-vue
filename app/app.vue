@@ -12,6 +12,7 @@
         <SectionsHeroSection />
         <SectionsExperienceSection />
         <SectionsProjectsSection />
+        <SectionsContactSection />
       </main>
       <LayoutAppFooter />
     </div>

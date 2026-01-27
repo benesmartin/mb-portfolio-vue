@@ -1,7 +1,7 @@
 <template>
   <section
     id="home"
-    class="hero z-10 relative text-[var(--text)] w-full text-center cal-sans-regular mt-2 md:p-10 p-2 min-h-[60vh] flex items-center flex-col justify-center scroll-mt-[calc(env(safe-area-inset-top))]"
+    class="hero z-10 relative text-[var(--text)] w-full text-center cal-sans-regular mt-2 md:p-10 p-2 min-h-[60vh] flex items-center flex-col justify-center scroll-mt-24"
   >
     <h1 class="md:text-8xl text-6xl">
       Martin <span class="text-[var(--accent)]">Beneš</span>
