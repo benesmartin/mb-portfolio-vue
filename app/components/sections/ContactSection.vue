@@ -6,20 +6,20 @@
     <h2
       class="text-3xl font-bold mb-6 underline decoration-4 underline-offset-4 decoration-[var(--accent)]"
     >
-      Contact
+      {{ t("contact.title") }}
     </h2>
 
     <p class="text-[var(--muted)] mb-6">
-      Want to work together or just say hi? Feel free to reach out.
+      {{ t("contact.subtitle") }}
     </p>
 
     <div class="flex flex-col sm:flex-row sm:items-center gap-4">
       <a
-        href="mailto:hello@benesmartin.cz"
+        href="mailto:martin@benesmartin.cz"
         class="inline-flex items-center gap-2 px-4 py-2 rounded-full border-2 border-[var(--border)] bg-[var(--bg)] hover:bg-[var(--bg-hover)] transition-colors"
       >
         <Mail class="w-5 h-5 text-[var(--accent)]" />
-        <span>hello@benesmartin.cz</span>
+        <span>martin@benesmartin.cz</span>
       </a>
 
       <div class="flex gap-3">
@@ -41,6 +41,8 @@
 
 <script lang="ts" setup>
 import { Mail, Github, Linkedin, Instagram } from "lucide-vue-next";
+
+const { t } = useI18n();
 
 const socials = [
   {

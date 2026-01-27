@@ -7,9 +7,13 @@
   >
     <div class="text-[var(--muted-2)] text-xs mt-2 flex items-center">
       <Github class="w-4 h-4 inline mr-1" />
-      Last commit:
-      <span v-if="status === 'pending'" class="ml-1">Loading...</span>
-      <span v-else-if="status === 'error'" class="ml-1">Error</span>
+      {{ t("footer.lastCommit") }}:
+      <span v-if="status === 'pending'" class="ml-1">{{
+        t("footer.loading")
+      }}</span>
+      <span v-else-if="status === 'error'" class="ml-1">{{
+        t("footer.error")
+      }}</span>
       <span v-else class="ml-1">{{ date }}</span>
     </div>
   </a>
@@ -17,6 +21,8 @@
 
 <script lang="ts" setup>
 import { Github } from "lucide-vue-next";
+
+const { t } = useI18n();
 
 const { data: date, status } = await useAsyncData("last-commit", async () => {
   const data = await $fetch<{ commit: { author: { date: string } } }[]>(

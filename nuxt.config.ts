@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   compatibilityDate: "2025-07-15",
   devtools: { enabled: true },
-  modules: ["nuxt-particles", "@nuxtjs/tailwindcss"],
+  modules: ["nuxt-particles", "@nuxtjs/tailwindcss", "@nuxtjs/i18n"],
   app: {
     head: {
       link: [
@@ -26,4 +26,15 @@ export default defineNuxtConfig({
       },
     },
   },
+  i18n: {
+    locales: [
+      { code: "en", language: "en-US", file: "en.json", name: "English" },
+      { code: "cs", language: "cs-CZ", file: "cs.json", name: "Čeština" },
+    ],
+    defaultLocale: "en",
+    lazy: true,
+    langDir: "locales",
+    strategy: "no_prefix",
+  },
+  css: ["flag-icons/css/flag-icons.min.css"],
 });

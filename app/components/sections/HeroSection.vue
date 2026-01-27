@@ -7,14 +7,14 @@
       Martin <span class="text-[var(--accent)]">Beneš</span>
     </h1>
     <p class="roboto-regular md:text-xl text-base mt-2 text-[var(--muted)]">
-      Frontend Developer
+      {{ t("hero.title") }}
     </p>
     <div class="md:mt-6 mt-4 w-full flex justify-center gap-4">
       <a
         href="#projects"
         class="bg-[var(--accent)] py-2 px-6 md:text-lg text-sm rounded-full font-medium hover:scale-105 transition-all duration-300"
       >
-        View Projects
+        {{ t("hero.cta") }}
       </a>
     </div>
     <div class="mt-6 md:mt-8 flex items-center gap-4 text-[var(--muted)]">
@@ -35,6 +35,8 @@
 
 <script lang="ts" setup>
 import { Github, Linkedin, Instagram } from "lucide-vue-next";
+
+const { t } = useI18n();
 
 const socials = [
   { icon: Github, href: "https://github.com/benesmartin", label: "GitHub" },

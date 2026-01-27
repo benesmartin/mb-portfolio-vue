@@ -6,7 +6,7 @@
     <h2
       class="text-3xl font-bold mb-6 underline decoration-4 underline-offset-4 decoration-[var(--accent)]"
     >
-      Projects
+      {{ t("projects.title") }}
     </h2>
 
     <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -17,17 +17,21 @@
       >
         <img
           :src="project.img"
-          :alt="project.title"
+          :alt="t(`projects.items.${project.key}.title`)"
           class="w-full h-48 object-contain"
           loading="lazy"
         />
         <div class="p-4">
           <div class="mb-2">
-            <h3 class="text-xl font-semibold">{{ project.title }}</h3>
+            <h3 class="text-xl font-semibold">
+              {{ t(`projects.items.${project.key}.title`) }}
+            </h3>
             <span class="text-sm text-[var(--muted)]">{{ project.year }}</span>
           </div>
 
-          <p class="text-[var(--muted)] text-sm mb-3">{{ project.desc }}</p>
+          <p class="text-[var(--muted)] text-sm mb-3">
+            {{ t(`projects.items.${project.key}.desc`) }}
+          </p>
 
           <div class="flex flex-wrap gap-2 mb-4">
             <span
@@ -48,7 +52,7 @@
               class="inline-flex items-center gap-1.5 text-sm px-3 py-1.5 rounded-full border-2 border-[var(--border)] bg-[var(--card)] hover:bg-[var(--bg-hover)] transition-colors"
             >
               <ExternalLink class="w-4 h-4 text-[var(--accent)]" />
-              <span>Demo</span>
+              <span>{{ t("projects.demo") }}</span>
             </a>
             <a
               v-if="project.links.code"
@@ -58,7 +62,7 @@
               class="inline-flex items-center gap-1.5 text-sm px-3 py-1.5 rounded-full border-2 border-[var(--border)] bg-[var(--card)] hover:bg-[var(--bg-hover)] transition-colors"
             >
               <Github class="w-4 h-4 text-[var(--accent)]" />
-              <span>Code</span>
+              <span>{{ t("projects.code") }}</span>
             </a>
           </div>
         </div>
@@ -72,7 +76,7 @@
         class="inline-flex items-center gap-2 px-4 py-2 rounded-full border-2 border-[var(--border)] bg-[var(--bg)] hover:bg-[var(--bg-hover)] transition-colors"
       >
         <Github class="w-4 h-4 text-[var(--accent)]" />
-        More on GitHub
+        {{ t("projects.moreOnGithub") }}
       </a>
     </div>
   </section>
@@ -84,11 +88,12 @@ import nmPreview from "~/assets/nm-preview.png";
 import wmbPayPreview from "~/assets/wmb-pay-preview.png";
 import pkmnPreview from "~/assets/pkmn-preview.png";
 
+const { t } = useI18n();
+
 const projects = [
   {
     id: "necromancers-mystery",
-    title: "Necromancer's Mystery",
-    desc: "A text-based adventure game featuring pixel-art graphics, turn-based combat, and branching storylines with multiple endings. Includes mini-games, character customization, and custom sound effects.",
+    key: "nm",
     img: nmPreview,
     year: 2023,
     tags: ["HTML/CSS/JS", "Pixel-art", "Pure CSS"],
@@ -99,8 +104,7 @@ const projects = [
   },
   {
     id: "wmb-pay",
-    title: "WMB Pay",
-    desc: "A minimal payment page with dynamic amounts via URL, QR code generation, and mobile-first design.",
+    key: "wmbpay",
     img: wmbPayPreview,
     year: 2025,
     tags: ["React", "Tailwind", "UX", "QR"],
@@ -111,8 +115,7 @@ const projects = [
   },
   {
     id: "pokemon-sandstone",
-    title: "Pokémon Sandstone",
-    desc: "A fan-made monster-catching RPG built in Unity. Implemented catching mechanics, turn-based battles, inventory system, progression, and UI. Art & 3D by Pavka5.",
+    key: "pokemon",
     img: pkmnPreview,
     year: 2024,
     tags: ["Unity", "C#", "2.5D", "RPG"],

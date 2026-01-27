@@ -1,0 +1,77 @@
+{
+  "nav": {
+    "home": "Home",
+    "experience": "Experience",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Frontend Developer",
+    "cta": "View Projects"
+  },
+  "experience": {
+    "title": "Work Experience",
+    "jobs": {
+      "localazy": {
+        "title": "Frontend Developer",
+        "type": "Remote",
+        "period": "02/2026 - Present",
+        "desc": "Building and optimizing localization platform features for global customers."
+      },
+      "ujep": {
+        "title": "IT Technician",
+        "type": "On-site",
+        "period": "07/2024 - 01/2026",
+        "desc": "Provided IT support and system administration for the faculty, including server configuration and resolving technical issues for staff and students."
+      },
+      "fkteplice": {
+        "title": "Match Day Director",
+        "type": "On-site",
+        "period": "10/2022 - Present",
+        "desc": "Managing the stadium's LED screen and sound system during match days. Started as a cameraman and instant replay operator."
+      },
+      "intellmaps": {
+        "title": "Frontend Developer",
+        "type": "Remote (Internship)",
+        "period": "01/2022 - 02/2022",
+        "desc": "Improved the web map application and designed new UI components while collaborating with a remote team."
+      },
+      "jenakcie": {
+        "title": "Copywriter",
+        "type": "Remote",
+        "period": "03/2021 - 05/2021",
+        "desc": "Wrote stock market articles and investment analyses. Managed content in WordPress."
+      }
+    }
+  },
+  "projects": {
+    "title": "Projects",
+    "demo": "Demo",
+    "code": "Code",
+    "moreOnGithub": "More on GitHub",
+    "items": {
+      "nm": {
+        "title": "Necromancer's Mystery",
+        "desc": "A text-based adventure game featuring pixel-art graphics, turn-based combat, and branching storylines with multiple endings. Includes mini-games, character customization, and custom sound effects."
+      },
+      "wmbpay": {
+        "title": "WMB Pay",
+        "desc": "A minimal payment page with dynamic amounts via URL, QR code generation, and mobile-first design."
+      },
+      "pokemon": {
+        "title": "Pokémon Sandstone",
+        "desc": "A fan-made monster-catching RPG built in Unity. Implemented catching mechanics, turn-based battles, inventory system, progression, and UI. Art & 3D by Pavka5."
+      }
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Want to work together? Feel free to reach out."
+  },
+  "footer": {
+    "backToTop": "Back to top",
+    "lastCommit": "Last commit",
+    "loading": "Loading...",
+    "error": "Error"
+  }
+}

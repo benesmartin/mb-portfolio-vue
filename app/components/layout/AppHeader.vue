@@ -24,6 +24,20 @@
         </li>
       </ul>
       <button
+        type="button"
+        class="mr-2 hover:scale-110 transition-transform"
+        :aria-label="
+          locale === 'en' ? 'Switch to Czech' : 'Přepnout do angličtiny'
+        "
+        @click="setLocale(locale === 'en' ? 'cs' : 'en')"
+      >
+        <span
+          class="fi rounded-sm"
+          :class="locale === 'en' ? 'fi-cz' : 'fi-gb'"
+          style="font-size: 1.4rem"
+        />
+      </button>
+      <button
         class="md:hidden w-8 h-8 flex items-center justify-center transition-transform duration-200 text-[var(--muted)]"
         @click="isMobileNav = !isMobileNav"
         aria-label="Toggle navigation menu"
@@ -60,12 +74,13 @@
 <script lang="ts" setup>
 import { Menu, X } from "lucide-vue-next";
 
+const { t, locale, setLocale } = useI18n();
 const isMobileNav = ref(false);
 
-const navItems = [
-  { label: "Home", href: "#home" },
-  { label: "Experience", href: "#experience" },
-  { label: "Projects", href: "#projects" },
-  { label: "Contact", href: "#contact" },
-];
+const navItems = computed(() => [
+  { label: t("nav.home"), href: "#home" },
+  { label: t("nav.experience"), href: "#experience" },
+  { label: t("nav.projects"), href: "#projects" },
+  { label: t("nav.contact"), href: "#contact" },
+]);
 </script>

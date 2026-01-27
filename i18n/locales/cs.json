@@ -1,0 +1,77 @@
+{
+  "nav": {
+    "home": "Domů",
+    "experience": "Zkušenosti",
+    "projects": "Projekty",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "title": "Frontend vývojář",
+    "cta": "Zobrazit projekty"
+  },
+  "experience": {
+    "title": "Pracovní zkušenosti",
+    "jobs": {
+      "localazy": {
+        "title": "Frontend vývojář",
+        "type": "Na dálku",
+        "period": "02/2026 - dosud",
+        "desc": "Vývoj a optimalizace funkcí lokalizační platformy pro globální zákazníky."
+      },
+      "ujep": {
+        "title": "IT Technik",
+        "type": "Na místě",
+        "period": "07/2024 - 01/2026",
+        "desc": "IT podpora a správa systémů pro fakultu, včetně konfigurace serverů a řešení technických problémů pro zaměstnance a studenty."
+      },
+      "fkteplice": {
+        "title": "Režisér zápasového programu",
+        "type": "Na místě",
+        "period": "10/2022 - dosud",
+        "desc": "Správa LED obrazovky a ozvučení stadionu během zápasů. Začínal jsem jako kameraman a operátor opakovaných záznamů."
+      },
+      "intellmaps": {
+        "title": "Frontend vývojář",
+        "type": "Na dálku (Stáž)",
+        "period": "01/2022 - 02/2022",
+        "desc": "Vylepšení webové mapové aplikace a návrh nových UI komponent ve spolupráci se vzdáleným týmem."
+      },
+      "jenakcie": {
+        "title": "Copywriter",
+        "type": "Na dálku",
+        "period": "03/2021 - 05/2021",
+        "desc": "Psaní článků o akciových trzích a investičních analýz. Správa obsahu ve WordPressu."
+      }
+    }
+  },
+  "projects": {
+    "title": "Projekty",
+    "demo": "Demo",
+    "code": "Kód",
+    "moreOnGithub": "Více na GitHubu",
+    "items": {
+      "nm": {
+        "title": "Necromancer's Mystery",
+        "desc": "Textová adventura s pixel-art grafikou, tahovými souboji a rozvětvenými příběhy s více konci. Obsahuje minihry, přizpůsobení postavy a vlastní zvukové efekty."
+      },
+      "wmbpay": {
+        "title": "WMB Pay",
+        "desc": "Minimalistická platební stránka s dynamickými částkami přes URL, generováním QR kódů a mobile-first designem."
+      },
+      "pokemon": {
+        "title": "Pokémon Sandstone",
+        "desc": "Fanouškovská RPG hra o chytání monster vytvořená v Unity. Implementace mechanik chytání, tahových soubojů, inventáře, postupu a UI. Art & 3D od Pavka5."
+      }
+    }
+  },
+  "contact": {
+    "title": "Kontakt",
+    "subtitle": "Chcete spolupracovat? Neváhejte se ozvat."
+  },
+  "footer": {
+    "backToTop": "Zpět nahoru",
+    "lastCommit": "Poslední commit",
+    "loading": "Načítání...",
+    "error": "Chyba"
+  }
+}
