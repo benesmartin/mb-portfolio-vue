@@ -1,4 +1,8 @@
 {
+  "seo": {
+    "title": "Martin Beneš - Frontend vývojář",
+    "description": "Moje portfolio s ukázkou projektů a pracovních zkušeností."
+  },
   "nav": {
     "home": "Domů",
     "experience": "Zkušenosti",

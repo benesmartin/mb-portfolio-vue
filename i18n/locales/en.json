@@ -1,4 +1,8 @@
 {
+  "seo": {
+    "title": "Martin Beneš - Frontend Developer",
+    "description": "My portfolio showcasing projects and professional experience."
+  },
   "nav": {
     "home": "Home",
     "experience": "Experience",
