@@ -12,7 +12,7 @@
         <h1 class="ml-4 text-xl">Martin Beneš</h1>
       </div>
       <ul
-        class="md:flex hidden justify-evenly gap-x-8 mr-5 text-[var(--muted-more)]"
+        class="md:flex hidden justify-evenly gap-x-8 mr-5 text-[var(--muted-2)]"
       >
         <li v-for="item in navItems" :key="item.href">
           <a
@@ -56,7 +56,7 @@
     class="fixed inset-x-4 md:hidden z-[100] cal-sans-regular bg-[var(--card)] p-2 rounded-xl text-[var(--text)] border-2 border-[var(--border)] frosted top-[calc(6rem+env(safe-area-inset-top))]"
   >
     <ul
-      class="flex flex-col justify-center items-center gap-y-4 text-[var(--muted-more)]"
+      class="flex flex-col justify-center items-center gap-y-4 text-[var(--muted-2)]"
     >
       <li v-for="item in navItems" :key="item.href">
         <a

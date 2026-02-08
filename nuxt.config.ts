@@ -2,7 +2,10 @@
 export default defineNuxtConfig({
   compatibilityDate: "2025-07-15",
   devtools: { enabled: true },
-  modules: ["nuxt-particles", "@nuxtjs/tailwindcss", "@nuxtjs/i18n"],
+  modules: ["nuxt-particles", "@nuxtjs/tailwindcss", "@nuxtjs/i18n", "@nuxtjs/sitemap"],
+  site: {
+    url: "https://benesmartin.cz",
+  },
   app: {
     head: {
       link: [

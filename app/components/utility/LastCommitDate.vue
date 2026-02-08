@@ -22,14 +22,14 @@
 <script lang="ts" setup>
 import { Github } from "lucide-vue-next";
 
-const { t } = useI18n();
+const { t, locale } = useI18n();
 
 const { data: date, status } = await useAsyncData("last-commit", async () => {
   const data = await $fetch<{ commit: { author: { date: string } } }[]>(
     "https://api.github.com/repos/benesmartin/mb-portfolio-vue/commits",
   );
   if (data?.[0]?.commit?.author?.date) {
-    return new Date(data[0].commit.author.date).toLocaleDateString();
+    return new Date(data[0].commit.author.date).toLocaleDateString(locale.value);
   }
   return null;
 });

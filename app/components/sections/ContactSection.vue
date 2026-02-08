@@ -40,25 +40,8 @@
 </template>
 
 <script lang="ts" setup>
-import { Mail, Github, Linkedin, Instagram } from "lucide-vue-next";
+import { Mail } from "lucide-vue-next";
+import { socials } from "~/composables/useSocials";
 
 const { t } = useI18n();
-
-const socials = [
-  {
-    icon: Github,
-    href: "https://github.com/benesmartin",
-    label: "GitHub",
-  },
-  {
-    icon: Linkedin,
-    href: "https://www.linkedin.com/in/benesmartincz/",
-    label: "LinkedIn",
-  },
-  {
-    icon: Instagram,
-    href: "https://instagram.com/martinbenes05",
-    label: "Instagram",
-  },
-];
 </script>

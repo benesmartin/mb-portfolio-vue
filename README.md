@@ -1,75 +1,34 @@
-# Nuxt Minimal Starter
+# Portfolio
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Moje osobní portfolio s přehledem zkušeností, projektů a kontaktů.
+🔗 Živá verze: [benesmartin.cz](https://benesmartin.cz)
 
-## Setup
+## Funkce
 
-Make sure to install dependencies:
+- stručné CV a zkušenosti
+- ukázky projektů (s odkazy na demo/kód)
+- CZ/EN verze (i18n)
+- particle efekt na pozadí
+- kontaktní odkazy na sítě
+
+## Technologie
+
+- [Nuxt 4](https://nuxt.com/) + [Vue 3](https://vuejs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [@nuxtjs/i18n](https://i18n.nuxtjs.org/)
+- [lucide-vue-next](https://lucide.dev/)
+- [tsParticles](https://particles.js.org/)
+
+## Instalace
 
 ```bash
-# npm
-npm install
-
-# pnpm
 pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
 pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
 
-## Production
-
-Build the application for production:
+## Build
 
 ```bash
-# npm
-npm run build
-
-# pnpm
 pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
 pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
 ```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.

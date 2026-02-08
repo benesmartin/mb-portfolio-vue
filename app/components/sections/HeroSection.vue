@@ -1,7 +1,7 @@
 <template>
   <section
     id="home"
-    class="hero z-10 relative text-[var(--text)] w-full text-center cal-sans-regular mt-2 md:p-10 p-2 min-h-[60vh] flex items-center flex-col justify-center scroll-mt-24"
+    class="z-10 relative text-[var(--text)] w-full text-center cal-sans-regular mt-2 md:p-10 p-2 min-h-[60vh] flex items-center flex-col justify-center scroll-mt-24"
   >
     <h1 class="md:text-8xl text-6xl">
       Martin <span class="text-[var(--accent)]">Beneš</span>
@@ -34,21 +34,7 @@
 </template>
 
 <script lang="ts" setup>
-import { Github, Linkedin, Instagram } from "lucide-vue-next";
+import { socials } from "~/composables/useSocials";
 
 const { t } = useI18n();
-
-const socials = [
-  { icon: Github, href: "https://github.com/benesmartin", label: "GitHub" },
-  {
-    icon: Linkedin,
-    href: "https://www.linkedin.com/in/benesmartincz/",
-    label: "LinkedIn",
-  },
-  {
-    icon: Instagram,
-    href: "https://instagram.com/martinbenes05",
-    label: "Instagram",
-  },
-];
 </script>

@@ -1,13 +1,22 @@
 <script setup lang="ts">
 const { t } = useI18n();
 
+const siteUrl = "https://benesmartin.cz";
+
 useSeoMeta({
   title: () => t("seo.title"),
   ogTitle: () => t("seo.title"),
   description: () => t("seo.description"),
   ogDescription: () => t("seo.description"),
   ogType: "website",
+  ogImage: `${siteUrl}/og-image.png`,
+  ogUrl: siteUrl,
   twitterCard: "summary_large_image",
+  twitterImage: `${siteUrl}/og-image.png`,
+});
+
+useHead({
+  link: [{ rel: "canonical", href: siteUrl }],
 });
 </script>
 
