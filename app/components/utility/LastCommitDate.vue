@@ -14,7 +14,7 @@
       <span v-else-if="status === 'error'" class="ml-1">{{
         t("footer.error")
       }}</span>
-      <span v-else class="ml-1">{{ date }}</span>
+      <span v-else class="ml-1">{{ formattedDate }}</span>
     </div>
   </a>
 </template>
@@ -24,13 +24,15 @@ import { Github } from "lucide-vue-next";
 
 const { t, locale } = useI18n();
 
-const { data: date, status } = await useAsyncData("last-commit", async () => {
+const { data: rawDate, status } = await useAsyncData("last-commit", async () => {
   const data = await $fetch<{ commit: { author: { date: string } } }[]>(
     "https://api.github.com/repos/benesmartin/mb-portfolio-vue/commits",
   );
-  if (data?.[0]?.commit?.author?.date) {
-    return new Date(data[0].commit.author.date).toLocaleDateString(locale.value);
-  }
-  return null;
+  return data?.[0]?.commit?.author?.date ?? null;
+});
+
+const formattedDate = computed(() => {
+  if (!rawDate.value) return null;
+  return new Date(rawDate.value).toLocaleDateString(locale.value);
 });
 </script>
