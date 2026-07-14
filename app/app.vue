@@ -10,13 +10,17 @@ useSeoMeta({
   ogDescription: () => t("seo.description"),
   ogType: "website",
   ogImage: `${siteUrl}/og-image.png`,
-  ogUrl: siteUrl,
   twitterCard: "summary_large_image",
   twitterImage: `${siteUrl}/og-image.png`,
 });
 
+// per-locale canonical, hreflang alternates, og:url/og:locale
+const i18nHead = useLocaleHead();
+
 useHead({
-  link: [{ rel: "canonical", href: siteUrl }],
+  htmlAttrs: () => ({ lang: i18nHead.value.htmlAttrs?.lang }),
+  link: () => [...(i18nHead.value.link || [])],
+  meta: () => [...(i18nHead.value.meta || [])],
   script: [
     {
       type: "application/ld+json",
@@ -46,12 +50,7 @@ useHead({
     </div>
     <div class="max-w-6xl mx-auto px-4">
       <LayoutAppHeader />
-      <main class="max-w-5xl mx-auto">
-        <SectionsHeroSection />
-        <SectionsExperienceSection />
-        <SectionsProjectsSection />
-        <SectionsContactSection />
-      </main>
+      <NuxtPage />
       <LayoutAppFooter />
     </div>
   </div>

@@ -32,13 +32,19 @@ export default defineNuxtConfig({
     },
   },
   i18n: {
+    baseUrl: "https://benesmartin.cz",
     locales: [
       { code: "en", language: "en-US", file: "en.json", name: "English" },
       { code: "cs", language: "cs-CZ", file: "cs.json", name: "Čeština" },
     ],
     defaultLocale: "en",
     langDir: "locales",
-    strategy: "no_prefix",
+    strategy: "prefix_except_default",
+    detectBrowserLanguage: {
+      useCookie: true,
+      cookieKey: "i18n_redirected",
+      redirectOn: "root",
+    },
   },
   css: ["flag-icons/css/flag-icons.min.css"],
 });
