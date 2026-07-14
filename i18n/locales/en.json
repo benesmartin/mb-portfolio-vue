@@ -1,7 +1,7 @@
 {
   "seo": {
     "title": "Martin Beneš - Frontend Developer",
-    "description": "My portfolio showcasing projects and professional experience."
+    "description": "I'm a frontend developer at Localazy, building with Vue, Nuxt and TypeScript. Some of my projects include a YouTube Music browser extension, games and payment tools."
   },
   "nav": {
     "home": "Home",
@@ -10,7 +10,7 @@
     "contact": "Contact"
   },
   "hero": {
-    "title": "Frontend Developer",
+    "title": "Frontend developer building with Vue and Nuxt, currently at Localazy",
     "cta": "View Projects"
   },
   "experience": {
@@ -54,6 +54,10 @@
     "code": "Code",
     "moreOnGithub": "More on GitHub",
     "items": {
+      "ytmc": {
+        "title": "Companion for YouTube Music",
+        "desc": "A browser extension that turns YouTube Music into a toolbar mini player: playback controls, drag-to-reorder queue, real listening history, search, playlists, synced lyrics and themes. Built by reverse-engineering YTM's internal APIs."
+      },
       "nm": {
         "title": "Necromancer's Mystery",
         "desc": "A text-based adventure game featuring pixel-art graphics, turn-based combat, and branching storylines with multiple endings. Includes mini-games, character customization, and custom sound effects."

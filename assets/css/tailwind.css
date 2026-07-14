@@ -55,7 +55,3 @@ html {
   font-weight: 400;
   font-style: normal;
 }
-
-html:not(.hydrated) body {
-  visibility: hidden;
-}

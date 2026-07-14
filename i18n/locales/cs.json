@@ -1,7 +1,7 @@
 {
   "seo": {
     "title": "Martin Beneš - Frontend vývojář",
-    "description": "Moje portfolio s ukázkou projektů a pracovních zkušeností."
+    "description": "Jsem frontend vývojář v Localazy, pracuji s Vue, Nuxt a TypeScriptem. Některé z mých projektů zahrnují rozšíření pro YouTube Music, hry a platební nástroje."
   },
   "nav": {
     "home": "Domů",
@@ -10,7 +10,7 @@
     "contact": "Kontakt"
   },
   "hero": {
-    "title": "Frontend vývojář",
+    "title": "Frontend vývojář ve Vue a Nuxt, aktuálně v Localazy",
     "cta": "Zobrazit projekty"
   },
   "experience": {
@@ -54,6 +54,10 @@
     "code": "Kód",
     "moreOnGithub": "Více na GitHubu",
     "items": {
+      "ytmc": {
+        "title": "Companion for YouTube Music",
+        "desc": "Rozšíření prohlížeče, které promění YouTube Music v mini přehrávač v liště: ovládání přehrávání, fronta s přetahováním, skutečná historie poslechu, vyhledávání, playlisty, synchronizované texty a motivy. Postaveno reverzním inženýrstvím interních API YTM."
+      },
       "nm": {
         "title": "Necromancer's Mystery",
         "desc": "Textová adventura s pixel-art grafikou, tahovými souboji a rozvětvenými příběhy s více konci. Obsahuje minihry, přizpůsobení postavy a vlastní zvukové efekty."

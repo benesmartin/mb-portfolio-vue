@@ -17,6 +17,24 @@ useSeoMeta({
 
 useHead({
   link: [{ rel: "canonical", href: siteUrl }],
+  script: [
+    {
+      type: "application/ld+json",
+      innerHTML: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Person",
+        name: "Martin Beneš",
+        url: siteUrl,
+        jobTitle: "Frontend Developer",
+        worksFor: { "@type": "Organization", name: "Localazy" },
+        sameAs: [
+          "https://github.com/benesmartin",
+          "https://www.linkedin.com/in/benesmartincz/",
+          "https://addons.mozilla.org/en-US/firefox/user/20017229/",
+        ],
+      }),
+    },
+  ],
 });
 </script>
 

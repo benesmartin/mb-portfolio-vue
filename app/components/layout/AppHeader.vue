@@ -9,7 +9,7 @@
           alt="Martin Beneš logo"
           class="rounded-md border-2 border-[var(--border)] w-10 h-10"
         />
-        <h1 class="ml-4 text-xl">Martin Beneš</h1>
+        <span class="ml-4 text-xl">Martin Beneš</span>
       </div>
       <ul
         class="md:flex hidden justify-evenly gap-x-8 mr-5 text-[var(--muted-2)]"
