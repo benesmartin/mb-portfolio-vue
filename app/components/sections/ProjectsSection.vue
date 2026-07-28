@@ -202,7 +202,6 @@ import { Github, ExternalLink, Star } from "lucide-vue-next";
 import nmPreview from "~/assets/nm-preview.webp";
 import wmbPayPreview from "~/assets/wmb-pay-preview.webp";
 import pkmnPreview from "~/assets/pkmn-preview.webp";
-import ytmcPreview from "~/assets/ytmc-preview.webp";
 
 const { t } = useI18n();
 
@@ -219,7 +218,9 @@ const projects: Project[] = [
   {
     id: "ytm-companion",
     key: "ytmc",
-    img: ytmcPreview,
+    // latest-release asset: auto-updates whenever a release ships a new
+    // 01-player-queue.png (the extension's hero screenshot)
+    img: "https://github.com/benesmartin/youtube-music-companion/releases/latest/download/01-player-queue.png",
     year: 2026,
     tags: ["WebExtension", "JavaScript", "Reverse engineering", "GPL-3.0"],
     links: {
