@@ -237,7 +237,7 @@ const projects: Project[] = [
     year: 2023,
     tags: ["HTML/CSS/JS", "Pixel-art", "Pure CSS"],
     links: {
-      demo: "https://nm.martinben.es",
+      demo: "https://nm.benesmartin.cz",
       code: "https://github.com/benesmartin/necromancers-mystery",
     },
   },
